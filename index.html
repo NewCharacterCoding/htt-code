@@ -2,12 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <title>Merry Christmas</title>
-
+    <link rel="icon" href="logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <style>
       button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0} menu,article,aside,details,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{}button,select{text-transform:none}[type=submit], [type=reset],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}/*# sourceMappingURL=normalize.min.css.map */
-    
+      #labels {
+        font-family: 'Dancing Script', cursive; /* Thay đổi sang font Lobster */
+        color: #c5a880;
+        font-size: 3.5rem;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-shadow: 0px 1px 0px #161616, 
+                    0px 2px 0px #161616, 
+                    0px 3px 0px #161616,
+                    0px 4px 0px #161616, 
+                    0px 5px 0px #161616, 
+                    0px 6px 1px rgba(0,0,0,0.1), 
+                    0px 0px 5px rgba(0,0,0,0.4), 
+                    0px 8px 3px rgba(0,0,0,0.2),
+                    0px 12px 10px rgba(0,0,0,0.4);
+        animation: float 2s infinite ease-in-out;
+      }
+
     </style>
     
     <style>
@@ -2135,7 +2153,7 @@ new la({color:void 0!==b?b:16777215}))};k.WrapAroundEnding=2402;k.XHRLoader=func
 
     <div id="overlay">
       <ul>
-        <li class="title">To 肥汪卷：</li>
+        <li class="title">Ấn hộp quà nìii</li>
         <li>
           <button class="btn" id="btnA" type="button">
             <!-- Merry Christmas  -->
@@ -2154,12 +2172,13 @@ new la({color:void 0!==b?b:16777215}))};k.WrapAroundEnding=2402;k.XHRLoader=func
     <script id="rendered-js">
       // 💗 ‼️ ‼️ 想要说的话在这里 💗
       const my_labels = [
-        "Trịnh Thanh Thùy",
         "Merry Christmas",
         "Chúc Thùy luôn...",
         "Mạnh khỏe",
         "Hạnh phúc",
         "và có 1 Giáng Sinh thật ấm áp",
+        "Hihi :333",
+        "..."
       ];
       const { PI, sin, cos } = Math;
       const TAU = 2 * PI;
@@ -2297,10 +2316,10 @@ new la({color:void 0!==b?b:16777215}))};k.WrapAroundEnding=2402;k.XHRLoader=func
       }
       function loadAudio(i) {
         document.getElementById("overlay").innerHTML =
-          '<div class="text-loading">Merry Christmas ...</div>';
+          '<div class="text-loading">loading.....</div>';
         
         const files = [
-          "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Simon_Panrucker/Happy_Christmas_You_Guys/Simon_Panrucker_-_01_-_Snowflakes_Falling_Down.mp3" // ! 音乐资源获取
+          "https://files.freemusicarchive.org/storage-freemusicarchive-org/tribe-of-noise-pro/music/3e3b88aa5ea27927528bd34388753408.mp3" // ! 音乐资源获取
         ];
 
         const file = files[i];
