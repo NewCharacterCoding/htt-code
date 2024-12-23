@@ -25,7 +25,42 @@
                     0px 12px 10px rgba(0,0,0,0.4);
         animation: float 2s infinite ease-in-out;
       }
-
+      #gift-message {
+        font-family: 'Dancing Script', cursive; /* Thay đổi sang font Lobster */
+        color: #c5a880;
+        font-size: 3.5rem;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-shadow: 0px 1px 0px #161616, 
+                    0px 2px 0px #161616, 
+                    0px 3px 0px #161616,
+                    0px 4px 0px #161616, 
+                    0px 5px 0px #161616, 
+                    0px 6px 1px rgba(0,0,0,0.1), 
+                    0px 0px 5px rgba(0,0,0,0.4), 
+                    0px 8px 3px rgba(0,0,0,0.2),
+                    0px 12px 10px rgba(0,0,0,0.4);
+        animation: float 2s infinite ease-in-out;
+    }
+    #to {
+        font-family: 'Dancing Script', cursive; /* Thay đổi sang font Lobster */
+        color: #c5a880;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-shadow: 0px 1px 0px #161616, 
+                    0px 2px 0px #161616, 
+                    0px 3px 0px #161616,
+                    0px 4px 0px #161616, 
+                    0px 5px 0px #161616, 
+                    0px 6px 1px rgba(0,0,0,0.1), 
+                    0px 0px 5px rgba(0,0,0,0.4), 
+                    0px 8px 3px rgba(0,0,0,0.2),
+                    0px 12px 10px rgba(0,0,0,0.4);
+        animation: float 2s infinite ease-in-out;
+  }
     </style>
     
     <style>
@@ -129,7 +164,7 @@
         width: 100%;
         text-align: center;
         opacity: 0;
-        transition: all 1s ease-in-out;
+        transition: all 5s ease-in-out;
         z-index: -1;
         top: 20%;
       }
@@ -2153,13 +2188,16 @@ new la({color:void 0!==b?b:16777215}))};k.WrapAroundEnding=2402;k.XHRLoader=func
 
     <div id="overlay">
       <ul>
-        <li class="title">Ấn hộp quà nìii</li>
+        
+        <div id="gift-message">Mở tui nìii</div>
+        
         <li>
           <button class="btn" id="btnA" type="button">
             <!-- Merry Christmas  -->
             🎁
           </button>
         </li>
+        <div id="to">To: tttn.2221</div>
         <!-- <li class="separator">或者</li>
         <li>
           <input type="file" id="upload" hidden />
@@ -2173,12 +2211,6 @@ new la({color:void 0!==b?b:16777215}))};k.WrapAroundEnding=2402;k.XHRLoader=func
       // 💗 ‼️ ‼️ 想要说的话在这里 💗
       const my_labels = [
         "Merry Christmas",
-        "Chúc Thùy luôn...",
-        "Mạnh khỏe",
-        "Hạnh phúc",
-        "và có 1 Giáng Sinh thật ấm áp",
-        "Hihi :333",
-        "..."
       ];
       const { PI, sin, cos } = Math;
       const TAU = 2 * PI;
